@@ -13,4 +13,4 @@ learning and assignments at TechEdge.
 6. Wait for mentor review
 7. Fix requested changes
 8. Get approval
-9. Merge into main
+9. Merge into main.
