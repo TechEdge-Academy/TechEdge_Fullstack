@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    background-color: black;
+    color: white;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-container h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+
+}
+.nav-container p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.menu{
+    font-size: 24px;
+}
+.content{
+    height: 520px;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.content h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.content p{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.footer{
+    background-color: darkslategray;
+    color: white;
+    padding: 30px 45px;
+    text-align: center;
+    font-size: 14px;
+}
+.icons{
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+}
+.icons span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.icons a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.icons {
+    color: salmon;
+}
+.about{
+    padding: 50px 45px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.about h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: darkslategray;
+    text-transform: capitalize;
+}
+.about p{
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+}
+.image1,
+.image2{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 25px;
+}
+.image1 img,
+.image2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image1 p,
+.image2 p{
+    grid-column: 1 / -1;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+}
