@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    background-color: black;
+    color: white;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+;
+}
+.nav-container h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.nav-container p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.menu{
+    font-size: 24px;
+}
+.content{
+    height: 520px;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.content h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.content p{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.footer{
+    background-color: darkslategray;
+    color: white;
+    padding: 30px 45px;
+    text-align: center;
+    font-size: 14px;
+}
+.icons{
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+}
+.icons span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.icons a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.icons {
+    color: salmon;
+}
+.about{
+    padding: 50px 45px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.about h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: darkslategray;
+    text-transform: capitalize;
+}
+.about p{
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 45px;
+    background-color: white;
+}
+
+.about-content{
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-content h3{
+    font-size: 32px;
+    color: darkslategray;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 3px solid darkslategray;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.about-content .tagline{
+    font-size: 14px;
+    color: cornflowerblue;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-content h4{
+    font-size: 28px;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+
+.about-content .description{
+    font-size: 14px;
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.read-more{
+    background-color:cornflowerblue;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover{
+    background-color:cornflowerblue;
+}
+.image1,
+.image2{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    flex: 1;
+}
+.image1 img,
+.image2 img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 15px solid lightgray;
+}
+
+.image1 p,
+.image2 p{
+    grid-column: 1 / -1;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.6;
+}
+@media (max-width: 768px){
+    nav{
+        padding: 15px 20px;
+    }
+
+    .nav-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-container h1{
+        position: static;
+        font-size: 24px;
+    }
+
+    .nav-container p{
+        order: 3;
+        width: 100%;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .menu{
+        font-size: 20px;
+    }
+
+    .content{
+        height: 400px;
+        padding: 120px 20px 0;
+    }
+
+    .content h2{
+        font-size: 34px;
+    }
+
+    .content p{
+        font-size: 18px;
+    }
+
+    .footer{
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .icons{
+        padding: 15px;
+    }
+
+    .about-section{
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 20px;
+    }
+
+    .about-content{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-content h3{
+        font-size: 28px;
+    }
+
+    .about-content h4{
+        font-size: 24px;
+    }
+
+    .image1,
+    .image2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        width: 100%;
+    }
+
+    .image1 img,
+    .image2 img{
+        width: 100%;
+        height: auto;
+        min-height: 150px;
+        object-fit: cover;
+        border-width: 8px;
+    }
+}
