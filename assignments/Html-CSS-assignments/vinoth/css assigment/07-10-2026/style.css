@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: whitesmoke;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font: inherit;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 60px;
+
+    background: white;
+
+    box-shadow: 0 4px 12px lightgray;
+
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    text-transform: uppercase;
+
+    font-size: 0.72rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+.nav-right {
+    gap: 18px;
+    font-size: 0.7rem;
+}
+
+.nav-right span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem !important;
+    color: black;
+}
+
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 90px;
+
+    background:
+        linear-gradient(darkgray, darkgray),
+        url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 520px;
+    color: white;
+}
+
+.hero-content h1 {
+    margin: 0;
+
+    font-size: 5rem;
+
+    letter-spacing: 2px;
+    line-height: 0.9;
+
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    margin: 18px 0 30px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons button {
+    padding: 16px 30px;
+
+    border-radius: 999px;
+
+    text-transform: capitalize;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    background: white;
+    color: black;
+
+    transition: 0.25s ease;
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-buttons .outline {
+    background: transparent;
+
+    border: 2px solid white;
+
+    color: white;
+}
+
+
+
+
+.brands {
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+
+    gap: 20px;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 32px 80px;
+
+    background: antiquewhite;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: dimgray;
+
+    text-transform: uppercase;
+}
+
+
+.offer {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(220px, 1fr));
+
+    gap: 24px;
+
+    padding: 38px 80px 20px;
+}
+
+.offer-card,
+.over-card {
+    position: relative;
+
+    min-height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+
+.offer-card:nth-child(1) {
+    background-image:
+        url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80');
+}
+
+
+.over-card {
+    background-image:
+        url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80');
+}
+
+
+.offer-card:nth-child(3) {
+    background-image:
+        url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80');
+}
+
+
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: dimgray;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 26px;
+
+    color: white;
+}
+
+.overlay h2 {
+    margin: 0 0 10px;
+
+    font-size: 2rem;
+
+    line-height: 1.1;
+}
+
+.overlay p {
+    margin: 0 0 18px;
+
+    font-size: 0.98rem;
+
+    line-height: 1.6;
+
+    color: white;
+}
+
+.overlay button {
+    align-self: flex-start;
+
+    padding: 12px 22px;
+
+    border-radius: 999px;
+
+    background: white;
+
+    color: black;
+
+    font-weight: 700;
+}
+
+
+.products-section {
+    padding: 36px 80px 60px;
+}
+
+.products-section h2 {
+    margin: 0 0 10px;
+
+    font-size: 2.3rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 90px;
+
+    height: 3px;
+
+    background: black;
+
+    margin-bottom: 25px;
+}
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(180px, 1fr));
+
+    gap: 22px;
+}
+
+.product {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 12px;
+
+    box-shadow: 0 8px 24px lightgray;
+}
+
+.product-image {
+    position: relative;
+
+    height: 260px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: whitesmoke;
+}
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.sale {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    background: black;
+
+    color: white;
+
+    padding: 6px 10px;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+
+    border-radius: 999px;
+
+    z-index: 2;
+}
+
+.product h3 {
+    margin: 18px 0 8px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.3;
+}
+
+.product p {
+    margin: 0 0 10px;
+
+    color: dimgray;
+
+    font-size: 0.9rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.product strong {
+    display: block;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 10px;
+}
+
+.product strong del {
+    color: gray;
+
+    font-weight: 500;
+
+    margin-right: 8px;
+}
+
+.stars,
+.dots {
+    font-size: 1rem;
+
+    letter-spacing: 2px;
+
+    color: goldenrod;
+}
+
+
+footer {
+    background: black;
+
+    color: white;
+
+    padding: 28px 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+footer h2 {
+    margin: 0;
+
+    font-size: 2rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 0.95rem;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 16px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+        font-size: 0.62rem;
+    }
+
+    .hero {
+        padding: 46px 18px;
+        min-height: 360px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.05rem;
+        margin: 12px 0 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+        padding: 12px 18px;
+        font-size: 0.9rem;
+    }
+
+    .brands,
+    .products-section,
+    .offer,
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .brands {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 14px;
+        font-size: 0.75rem;
+    }
+
+    .offer {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .offer-card,
+    .over-card {
+        min-height: 260px;
+    }
+
+    .overlay {
+        padding: 18px;
+    }
+
+    .overlay h2 {
+        font-size: 1.4rem;
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+    }
+
+    .products-section {
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+
+    .products-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
