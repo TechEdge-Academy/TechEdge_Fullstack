@@ -1,0 +1,57 @@
+
+body {
+    background: brown ;
+}
+
+
+body > nav,
+body > section,
+body > footer {
+    background-color: white;
+}
+
+
+h1.display-4 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+
+.container {
+    max-width: 100%;
+}
+
+
+.hero-img {
+    height: 430px;
+    object-fit: cover;
+}
+
+
+
+.small-img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+
+
+.product-img {
+    height: 270px;
+    object-fit: cover;
+}
+
+
+
+.bottom-img {
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+.about-img {
+    height: 430px;
+    object-fit: cover;
+}
